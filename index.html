@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+    :root {
+        --pico-border-radius: 2rem;
+        --pico-typography-spacing-vertical: 1.5rem;
+        --pico-form-element-spacing-vertical: 1rem;
+        --pico-form-element-spacing-horizontal: 1.25rem;
+    }
+    h1 {
+        --pico-font-family: Pacifico, cursive;
+        --pico-font-weight: 400;
+        --pico-typography-spacing-vertical: 0.5rem;
+        --pico-h1-color: #f42c6f;
+    }
+    button {
+        --pico-font-weight: 700;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/pico.colors.min.css">
+    <title>Hello world!</title>
+  </head>
+  <body class="container-fluid">
+    <main class="container-fluid" style="margin: auto;">
+      <h1 style="text-align: center;">Will you be my Christmas buddy?</h1>
+    </main>
+    <main class="container-fluid">
+        <div style="display: flex; justify-content: center;">
+            <div>
+                <button id="yesButton" style="width: 10vw;" onclick="location.href='thankyou.html'">Yes!</button>
+                <button id="noButton" style="width: 10vw;">No :(</button>
+            </div>
+        </div>
+    </main>
+    <main class="container-fluid">
+        <div style="display: flex; justify-content: center;">
+            <img src="cat.gif">
+        </div>
+    </main>
+  </body>
+  <script>
+    document
+      .getElementById("noButton")
+      .addEventListener("click", function () {
+        var yesButton = document.getElementById("yesButton");
+        var noButton = document.getElementById("noButton");
+        var currentYesFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+        var currentYesWidth = parseInt(window.getComputedStyle(yesButton).width);
+        var currentNoWidth = parseInt(window.getComputedStyle(noButton).width);
+        var currentNoHeight = parseInt(window.getComputedStyle(noButton).height);
+
+        if ((currentNoWidth < 10) || (currentNoHeight < 10)){
+            noButton.style.display = "none";
+        } 
+
+        yesButton.style.fontSize = currentYesFontSize + 20 + "px"; // Increase font size by 5px
+        yesButton.style.width = currentYesWidth + 50 + "px"; // Increase font size by 5px
+        noButton.style.width = currentNoWidth - 10 + "px"; // Increase font size by 5px
+        noButton.style.height = currentNoHeight - 10 + "px"; // Increase font size by 5px
+        
+      });
+  </script>
+</html>
