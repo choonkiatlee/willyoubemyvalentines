@@ -34,5 +34,34 @@
             <img src="garfield.gif">
         </div>
     </main> 
+    <main class="container-fluid">
+        <div style="display: flex; justify-content: center;">
+            <img src="kiss.gif" id="kiss"  style="display: none;">
+        </div>
+    </main>
+    <main class="container-fluid">
+        <div style="display: flex; justify-content: center;">
+            <button id="sendLoveButton" style="background-color: #f7708e; border-color: #f7708e;">I love my 糖爹 <3</button>
+        </div>
+    </main> 
   </body>
+  <script>
+    document
+      .getElementById("sendLoveButton")
+      .addEventListener("click", function () {
+        var picture = document.getElementById("kiss");
+
+        currentDisplay = window.getComputedStyle(picture).display;
+
+        if (currentDisplay == "none"){
+            picture.style.display = "block";
+        }
+        else {
+            var currentWidth = parseInt(window.getComputedStyle(picture).width);
+            var currentHeight = parseInt(window.getComputedStyle(picture).height);
+            picture.style.width = currentWidth + 50 + "px";
+            picture.style.height = currentHeight + 50 + "px";
+        }        
+      });
+  </script>
 </html>
