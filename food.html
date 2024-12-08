@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/pico.colors.min.css">
+    <style>
+    h1 {
+        --pico-font-family: Pacifico, cursive;
+        --pico-font-weight: 400;
+        --pico-typography-spacing-vertical: 0.5rem;
+        --pico-h1-color: #f42c6f;
+    }
+    button {
+        --pico-font-weight: 700;
+    }
+    img {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        border: 5px solid #ff9494;
+        object-fit: cover;
+        padding: 10px;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    
+    <title>Will you be my Valentines?</title>
+  </head>
+  <body class="container-fluid">
+    <main class="container-fluid" style="margin: auto;">
+      <h1 style="text-align: center;">Food?</h1>
+    </main>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="891b456f-3db0-4d32-9559-7802f9226269">
+        <input type="hidden" name="redirect" value="https://choonkiatlee.github.io/willyoubemyvalentines/christmasgift.html">
+        <fieldset class="grid">
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="food-sushi"/>
+                    <div>
+                        <img src="food-sushi.jpg">
+                        <label htmlFor="food-sushi">Sushi</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="food-jipai"/>
+                    <div>
+                        <img src="food-jipai.webp">
+                        <label htmlFor="food-jipai">雞排</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="food-bbq"/>
+                    <div>
+                        <img src="food-bbq.png">
+                        <label htmlFor="food-bbq">BBQ at home</label>
+                    </div>
+                </article>
+            </div>
+        </fieldset>
+        <fieldset class="grid">
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="food-hotpot"/>
+                    <div>
+                        <img src="food-hotpot.jpg">
+                        <label htmlFor="food-hotpot">Hotpot at home</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="food-cocktails"/>
+                    <div>
+                        <img src="food-cocktails.jpg">
+                        <label htmlFor="food-cocktails">Cocktails</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="food-doujiangyoutiao"/>
+                    <div>
+                        <img src="food-doujianyoutiao.jpg">
+                        <label htmlFor="food-doujiangyoutiao">豆浆油条</label>
+                    </div>
+                </article>
+            </div>
+        </fieldset>
+        <input type="submit" value="Send it to your 糖爹" style="background-color: #f7708e; border-color: #f7708e;"/>
+    </form>
+  </body>
+</html>

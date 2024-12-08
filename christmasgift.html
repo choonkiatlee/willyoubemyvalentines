@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/pico.colors.min.css">
+    <style>
+    h1 {
+        --pico-font-family: Pacifico, cursive;
+        --pico-font-weight: 400;
+        --pico-typography-spacing-vertical: 0.5rem;
+        --pico-h1-color: #f42c6f;
+    }
+    button {
+        --pico-font-weight: 700;
+    }
+    img {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        border: 5px solid #ff9494;
+        object-fit: cover;
+        padding: 10px;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    
+    <title>Will you be my Valentines?</title>
+  </head>
+  <body class="container-fluid">
+    <main class="container-fluid" style="margin: auto;">
+      <h1 style="text-align: center;">What gift would you love for Christmas?</h1>
+    </main>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="891b456f-3db0-4d32-9559-7802f9226269">
+        <input type="hidden" name="redirect" value="https://choonkiatlee.github.io/willyoubemyvalentines/thankyou2.html">
+        <fieldset class="grid">
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="shoes"/>
+                    <div>
+                        <img src="christmas-shoes.webp">
+                        <label htmlFor="shoes">Shoes</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="wines"/>
+                    <div>
+                        <img src="christmas-wines.jpg">
+                        <label htmlFor="wines">Wines</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="cornwall"/>
+                    <div>
+                        <img src="christmas-cornwall.jpg">
+                        <label htmlFor="cornwall">Weekend+ in cornwall</label>
+                    </div>
+                </article>
+            </div>
+        </fieldset>
+        <fieldset class="grid">
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="cuddling"/>
+                    <div>
+                        <img src="christmas-cuddling.png">
+                        <label htmlFor="cuddling">Weekend in bed</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="wineglasses"/>
+                    <div>
+                        <img src="christmas-wineglasses.jpg">
+                        <label htmlFor="wineglasses">Set of nice wineglasses</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article  style="display: flex; justify-content: center;">
+                    <input type="checkbox" name="pottery"/>
+                    <div>
+                        <img src="christmas-pottery.webp">
+                        <label htmlFor="pottery">Pottery Class</label>
+                    </div>
+                </article>
+            </div>
+        </fieldset>
+        <input type="submit" value="Send it to your 糖爹" style="background-color: #f7708e; border-color: #f7708e;"/>
+    </form>
+  </body>
+</html>
